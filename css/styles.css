@@ -1,0 +1,240 @@
+/*
+	Author:
+		Luis Rodríguez Fallas.
+		rodriguezfallasluis@gmail.com.
+	Creation date:
+		15 de junio 2021.
+	Last update:
+		15 de junio 2021.
+
+	Typographic fonts:
+    Title h1: Panton-BlackCaps
+    NexaRustSans-Black
+    Menu: Arial, Helvetica, sans-serif
+    SubTitle: "Raleway", sans-serif
+    Paragraphs: "Raleway", sans-serif
+    Paragraphs footer: Cambria, Cochin, Georgia, Times, "Times New Roman", serif
+
+	Paletas de colores
+		Color dominante: #e8a612
+		Color tónico: 
+		Color mediacion:  #c0c4c6
+    Color de fondo: #525659
+
+*/
+
+/* VARIABLES */
+:root {
+  --colorFondo: #525659;
+  --dominante: #e8a612;
+  --colorMediacion: #c0c4c6;
+}
+
+/* FUENTES */
+@font-face {
+  font-family: Panton-BlackCaps;
+  src: url("../fuentes/Panton-BlackCaps.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+@font-face {
+  font-family: NexaRustSans-Black;
+  src: url("../fuentes/NexaRustSans-Black.otf");
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+}
+
+/* *************************************************************** BODY *************************************************************** */
+body {
+  background-color: var(--colorFondo);
+}
+
+/* *************************************************************** WRAPPER *************************************************************** */
+#container {
+  width: 1283px;
+  height: 100%;
+  background-color: #fff;
+  margin: auto;
+}
+
+/* *************************************************************** ABOVE THE FOLD *************************************************************** */
+#cabecera {
+  width: 100%;
+  height: 796px;
+  background-image: url("../imagenes/index.png");
+  text-align: center;
+}
+.menu {
+  margin-top: 63px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8em;
+}
+.margIzMenu {
+  margin-left: 329px;
+  float: left;
+  text-align-last: justify;
+  width: 250px;
+}
+.margDrMenu {
+  margin-right: 280px;
+  float: right;
+  text-align-last: justify;
+  width: 270px;
+}
+.logo {
+  margin-top: 17px;
+  width: 110px;
+  height: 105px;
+}
+ul {
+  display: contents;
+}
+li {
+  display: inline-block;
+  list-style: none;
+  text-decoration: none;
+}
+.inicio {
+  width: 37px;
+  height: 14px;
+}
+.qSomos {
+  width: 94px;
+  height: 14px;
+}
+.products {
+  width: 62px;
+  height: 14px;
+}
+.pVenta {
+  width: 97px;
+  height: 13px;
+}
+.distribuidor {
+  width: 66px;
+  height: 12px;
+}
+.licontact {
+  width: 58px;
+  height: 12px;
+}
+a {
+  color: var(--colorMediacion);
+  text-decoration: none;
+}
+h1 {
+  margin: auto;
+  width: 690px;
+  height: 65px;
+  font-family: Panton-BlackCaps;
+  color: var(--dominante);
+  margin-top: 224px;
+  margin-right: 278px;
+  margin-left: 315px;
+  font-size: 5.52em;
+}
+.subtitle {
+  width: 480px;
+  height: 21px;
+  margin: auto;
+  margin-top: 49px;
+  margin-bottom: 310px;
+  font-size: 1.57em;
+  color: #fff;
+  font-family: "Raleway", sans-serif;
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* *************************************************************** SECTION 1 ******************************************************************* */
+.section1Container {
+  width: 640px;
+  height: 490px;
+  float: left;
+}
+.section1Title {
+  padding-top: 120px;
+  font-family: Panton-BlackCaps;
+  color: var(--dominante);
+  font-size: 3em;
+  margin: auto;
+  width: 254px;
+  height: 37px;
+}
+.section1Paragraph {
+  font-family: "Raleway", sans-serif;
+  font-size: 0.99em;
+  text-align: justify;
+  padding-top: 25px;
+  margin: auto;
+  width: 463px;
+  height: 130px;
+  line-height: 1.5;
+}
+.section1Btn {
+  display: block;
+  text-align: center;
+  width: 137px;
+  padding: 17px 5px 17px 5px;
+  margin: auto;
+  font-family: NexaRustSans-Black;
+  border: 2px solid var(--dominante);
+  color: var(--dominante);
+  margin-top: 25px;
+}
+
+/* *************************************************************** SECTION 2 ******************************************************************* */
+#seccion2 {
+  background-image: url("../imagenes/cerveza.png");
+  width: 1280px;
+  height: 450px;
+  clear: both;
+}
+.cerve {
+  margin-left: 250px;
+  margin-top: 120px;
+}
+
+/* *************************************************************** SECTION 3 ******************************************************************* */
+#seccion3 {
+  width: 1283px;
+  height: 484px;
+  text-align: center;
+}
+.seccion3__contImage {
+  width: 267px;
+  height: 280px;
+  background-color: black;
+  margin-top: 101px;
+}
+/* *************************************************************** SECTION CONTACT ******************************************************************* */
+#contact {
+  background-image: url("../imagenes/mapaindex.png");
+  width: 1283px;
+  height: 448px;
+}
+.contactImage {
+  margin-top: 183px;
+  margin-left: 364px;
+  width: 600px;
+  height: 150px;
+}
+
+/* *************************************************************** SECTION FOOTER ******************************************************************* */
+#footer {
+  background-color: black;
+  width: 1284px;
+  height: 234px;
+}
+.footer__paragraph {
+  text-align: center;
+  color: var(--colorMediacion);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-top: 0;
+  padding-top: 35px;
+}
+.footer__icons {
+  text-align: center;
+}
